@@ -1,0 +1,61 @@
+# General Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids/
+*.pid
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid.lock
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE / Editor specific
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Compiled code / build outputs
+dist/
+build/
+coverage/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# --- Subproject Specific ---
+
+# Backend specific ignores (already covered by general ignores, but good to be explicit)
+backend/node_modules/
+backend/dist/
+backend/.env*
+!backend/.env.example # If you add an example env file later
+
+# Contracts specific ignores (already covered by general ignores)
+contracts/node_modules/
+contracts/artifacts/
+contracts/cache/
+contracts/typechain-types/
+contracts/.env*
+!contracts/.env.example
+
+# Frontend specific ignores (add as needed, e.g., .next, build)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env*
+!frontend/.env.example
+frontend/coverage/

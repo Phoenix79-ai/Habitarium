@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "ES2016", // Target modern Node.js versions
+      "module": "CommonJS", // Standard module system for Node.js
+      "outDir": "./dist", // Where compiled JavaScript will go
+      "rootDir": "./src", // Where your TypeScript source code is
+      "strict": true, // Enable all strict type-checking options
+      "esModuleInterop": true, // Allows default imports from CommonJS modules
+      "skipLibCheck": true, // Skip type checking of declaration files (speeds up compilation)
+      "forceConsistentCasingInFileNames": true, // Prevent bugs related to case sensitivity
+      "resolveJsonModule": true, // Allow importing JSON files
+      "moduleResolution": "node", // How modules get resolved
+       "sourceMap": true // Generate source maps for debugging
+       // "baseUrl": "./", // Optional: if using path aliases
+       // "paths": {}      // Optional: define path aliases
+    },
+    "include": ["src/**/*"], // Which files TypeScript should compile
+    "exclude": ["node_modules", "**/*.spec.ts"] // Which files/folders to ignore
+  }
