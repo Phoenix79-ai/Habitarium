@@ -14,6 +14,8 @@ import authRoutes from './routes/auth.routes';
 import habitRoutes from './routes/habit.routes';
 import logRoutes from './routes/log.routes';
 import rewardRoutes from './routes/reward.routes'; // <-- Import reward routes
+import goalRoutes from './routes/goal.routes'; // <-- Add this line
+
 
 // Initialize express application
 const app: Express = express();
@@ -43,6 +45,8 @@ app.use('/api/auth', authRoutes);      // Authentication routes (register, login
 app.use('/api/habits', habitRoutes);   // Habit routes (CRUD, log)
 app.use('/api/logs', logRoutes);       // Log retrieval routes
 app.use('/api/rewards', rewardRoutes); // <-- Mount reward routes (list, redeem)
+app.use('/api/goals', goalRoutes); // <-- Add this line
+
 
 // --- Catch-all for 404 Not Found (Optional) ---
 // Place this after all other specific routes
